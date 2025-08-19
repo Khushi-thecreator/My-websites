@@ -7,11 +7,6 @@
 body {
     width: 100%;
     height: 100%;
-    background-image: url("b.avif");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -80,8 +75,8 @@ header .nav a:hover {
 }
 
 .main .sub {
-    width: 800px;
-    height: 250px;
+    width: 60%;
+    height: 40%;
     background-color: white;
     display: flex;
     justify-content: space-evenly;
@@ -246,12 +241,22 @@ header .nav a:hover {
 }
 
 .main3 {
+    background-image: url("b.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 700px;
     width: 100%;
+}
+
+.main3 .f1 {
+    height: 700px;
+    width: 100%;
+    background-color: rgba(193, 218, 247, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(193, 218, 247, 0.8);
 }
 
 .main3 .f {
@@ -290,9 +295,9 @@ header .nav a:hover {
     font-weight: normal;
 }
 
-.main4 h1{
-        margin-bottom: 4%;
-    }
+.main4 h1 {
+    margin-bottom: 4%;
+}
 
 .main4 .g {
     display: flex;
@@ -495,9 +500,13 @@ footer .c .c2 a:hover {
 }
 
 footer .c .c3 {
-    width: 235px;
+    width: 240px;
     height: 100px;
     /* border: 1px solid white; */
+}
+
+footer .c .c3 a {
+    color: white;
 }
 
 @media (max-width: 980px) {
@@ -509,12 +518,126 @@ footer .c .c3 {
         font-size: 13px;
     }
 
-    .main4 h1{
+    .main4 h1 {
         margin-bottom: 5%;
     }
 
     .main4 .g {
         margin-bottom: 25%;
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    header .logo a {
+        font-size: 10px;
+    }
+
+    header .nav a {
+        font-size: 10px;
+    }
+
+    .main {
+        width: 100%;
+        height: 500px;
+    }
+
+    .main .sub {
+        width: 60%;
+        height: 30%;
+    }
+
+    .main .sub .a {
+        font-size: 15px;
+    }
+
+    .main .sub .b {
+        font-size: 30px;
+    }
+
+    .main .sub button {
+        width: 200px;
+        height: 50px;
+    }
+
+    .main2 {
+        font-size: 11px;
+        height: 400px;
+        padding-top: 10px;
+    }
+
+    .main2 .c {
+        justify-content: center;
+    }
+
+    .main2 .d {
+        justify-content: center;
+    }
+
+    .main2 .e {
+        justify-content: center;
+    }
+
+    .main3 {
+        height: 500px;
+        font-size: 11px;
+    }
+
+    .main3 .f1 {
+        height: 500px;
+    }
+
+    .main3 .f1 .f {
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .main4 {
+        height: 500px;
+        font-size: 11px;
+    }
+
+    .main4 .g1,
+    .g2,
+    .g3,
+    .g4 {
+        width: 19%;
+        height: 100%;
+        margin: 20px;
+    }
+
+    .main4 .g5,
+    .g6,
+    .g7,
+    .g8 {
+        width: 20%;
+        height: 100px;
+    }
+
+    footer {
+        font-size: 11px;
+    }
+
+    footer .a .logo{
+        margin-bottom: 26px;
+    }
+
+    footer .a .pragraph {
+        width: 140px;
+        margin-right: 50px;
+    }
+
+    footer .b .b1 {
+        margin-top: 80px;
+    }
+
+    footer .b .b2 {
+        margin-bottom: 70px;
+    }
+
+    footer .c .c3 {
+        width: 200px;
     }
 
 }
